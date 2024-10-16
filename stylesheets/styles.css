@@ -1,0 +1,90 @@
+section {
+    margin: 4px 2px 8px 2px;
+
+    border: 0.2pt solid #cedddd;
+
+    padding: 1.5% 0.8%;
+
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f4ef;
+    color: black;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+a {
+    color: #A8DADC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    color: #fffffe;
+    text-align: center;
+}
+
+p {
+    background-color: gray;
+}
+
+link {
+    background-color: black;
+}
+
+ul {
+    color: black;
+}
+
+nav ul {
+
+    display: flex;									
+    justify-content: space-around;
+   
+}
+
+section form {
+
+    display: grid;									
+    row-gap: 0.5rem;
+
+}
+
+#resumen {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    flex-direction: column;
+    height: 24vh;
+
+    flex-wrap: wrap; 
+ 
+
+ 
+}
+ 

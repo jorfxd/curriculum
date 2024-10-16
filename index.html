@@ -8,6 +8,8 @@
         software, ingeniero de software">
     <meta name="description" content="de cammino a ser Desarrollador web full-stack, estudiante de la espol ">
     <meta name="author" content="Jorge Arroba">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+
 </head>
 
 <body>
@@ -15,6 +17,9 @@
         <h1>Jorge Andres Arroba Manjarrez</h1>
         <p> Fronted | jaarroba@espol.edu.ec| 099999999</p>
     </header>
+
+    
+
     <nav>
         <ul>
             <li><a href="#resumen">Resumen</a></li>
@@ -27,12 +32,11 @@
 
     <main>
         <section id="resumen">
-            <h2>Resumen</h2>
+            <h2 class="subtitle">Resumen</h2>
             <p>Soy un estudiante de la espol. Domino diferentes lenguajes de programacion:</p>
-            <img src="https://placehold.co/500x300" alt="Descripción de la imagen" />
-
-
+            <img id="photo" src="https://placehold.co/500x300" alt="Descripción de la imagen" />
         </section>
+
         <section id="experiencia">
             <h2>Experiencia</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11276.545460023803!2d-79.91586204112441!3d-2.206204578450933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1728502135888!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -80,12 +84,14 @@
                 <textarea id="educacion" name="educacion" rows="5"
                 required></textarea>
                 <label>Habilidades Técnicas:</label><br>
-                <input type="checkbox" name="habilidades" value="HTML"> HTML
-                <input type="checkbox" name="habilidades" value="CSS"> CSS
-                <input type="checkbox" name="habilidades" value="JavaScript">
-                JavaScript
+                <div>
+                <input type="checkbox" name="habilidades" value="HTML"> <span>HTML</span></div>
+                <div><input type="checkbox" name="habilidades" value="CSS"> <span>CSS</span></div>
+                <div><input type="checkbox" name="habilidades" value="JavaScript">
+                <span>JavaScript</span>
+                <div>
                 <label for="intereses">Intereses:</label>
-                <select id="intereses" name="intereses">
+                <select id="intereses" name="intereses"></div>
                 <option value="desarrollo">Desarrollo Web</option>
                 <option value="diseno">Diseño Gráfico</option>
                 <option value="marketing">Marketing Digital</option>
