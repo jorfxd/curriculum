@@ -1,10 +1,7 @@
 section {
     margin: 4px 2px 8px 2px;
-
     border: 0.2pt solid #cedddd;
-
     padding: 1.5% 0.8%;
-
     padding-left: 1.2%;
     padding-right: 1.2%;
     -webkit-border-radius: 5px;
@@ -15,57 +12,22 @@ section {
     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: white;
-    color: black;
-}
-
-h1 {
-    color: black;
-}
-
-h2 {
-    color: black;
-    
-}
-
-h3 {
-    color: black;
-}
-
-a {
-    color: #A8DADC;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
+/*Parte del encabezado*/
 header {
-    color: #fffffe;
+    color: #070700;
     text-align: center;
     margin-bottom: 20px;
 }
-
-p {
-    background-color: rgb(236, 82, 82);
+#encabezado {
+    background-color: rgb(178, 215, 240);
+    padding: 20px;
+    border-radius: 8px;
+}
+#encabezado h1{
+    margin-bottom: 30px;
 }
 
-link {
-    background-color: black;
-}
-
-ul {
-    color: black;
-}
-
-/*
-Empiezan las cajas para la seccion de navegacion
-*/
- 
-
+/*seccion de navegacion*/
 nav ul {
     display: flex;									
     justify-content: space-around;
@@ -76,9 +38,8 @@ nav ul {
 nav ul li {
     margin: 20 10px;
 }
-
 nav ul li a {
-    background-color: #ad69e6; 
+    background-color: #dec7f1; 
     color: white; 
     padding: 15px 25px; 
     border-radius: 10px; 
@@ -86,33 +47,164 @@ nav ul li a {
     font-size: 18px;
     transition: background-color 0.3s ease; 
 }
-
 nav ul li a:hover {
     background-color: #9797b3; 
 }
 
-/*
-Termina las cajas para la seccion de navegacion
-*/
-
-section form {
-
-    display: grid;									
-    row-gap: 0.5rem;
-
-}
-
+/*Parte del Resumen*/
 #resumen {
+    text-align: center;
+    padding: 20px;
+}
 
+#resumen .subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#resumen #photo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 60%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border: 3px solid black;
+}
+
+#resumen p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/*Educacion*/
+#educacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title title"
+        "text video";
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+#educacion h2 {
+    grid-area: title;
+    font-size: 28px;
+    color: #261883;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#educacion p {
+    grid-area: text;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+#educacion iframe {
+    grid-area: video;
+    border-radius: 8px;
+    align-self: center;
+    margin: auto;
+}
+
+
+/*Forumulario y mapa: Contactanos*/
+#contactanos {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(178, 215, 240);
+}
+#contactanos h2 {
+    font-size: 28px;
+    color: #261883;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#contactanos-content {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
- 
+    flex-wrap: wrap; 
+    gap: 40px; 
+    align-items: flex-start;
+
 }
-.collapsible {
-    display: none; /* Oculta las secciones por defecto */
+form {
+    flex: 1;
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid #261883;
+    padding: 30px;
+    border-radius: 8px;
+}
+.map-container {
+    min-width: 43%; 
+}
+form label {
+    font-weight: bold;
+    color: #3720d1;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #4A3F95;
+}
+form input::placeholder,
+form textarea::placeholder {
+    color: #b3a8e0;
+}
+form button {
+    width: 100px;
+    padding: 10px;
+    background-color: #4A3F95;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+form button:hover {
+    background-color: #392d73;
+}
+.map-container iframe {
+    padding-left: 30px;
+    border-radius: 8px;
 }
 
-.collapsible.active {
-    display: block; /* Muestra la sección si está activa */
+/*footer*/
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
+
+main {
+    padding-bottom: 60px;
+}
+
+footer {
+    background-color: #f8f8f8;
+    color: #3c3c3c;
+    text-align: center;
+    font-size: 0.9em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+}
+
+
