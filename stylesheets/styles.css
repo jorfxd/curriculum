@@ -11,6 +11,11 @@ section {
     -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
+body {
+    font-family: Arial, sans-serif; 
+    font-size: 18px;
+    line-height: 1.6; 
+}
 
 /*Parte del encabezado*/
 header {
@@ -55,6 +60,10 @@ nav ul li a:hover {
 #resumen {
     text-align: center;
     padding: 20px;
+    background-image: url('https://img.freepik.com/foto-gratis/fondo-3d-cubos-blancos_23-2150472998.jpg?t=st=1730186677~exp=1730190277~hmac=f00339dea3d9a61f8fb62e5a25c944456a49d0332d572f8befd855f6bf6796ee&w=740');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #resumen .subtitle {
@@ -77,6 +86,37 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto;
     padding-top: 10px;
+    
+}
+
+/*Cuentas y Redes*/
+
+#Redes h2{
+    grid-area: title;
+    font-size: 28px;
+    color: #261883;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+.social-links a {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links img {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 50px;
 }
 
 /*Educacion*/
@@ -100,10 +140,11 @@ nav ul li a:hover {
 }
 #educacion p {
     grid-area: text;
-    font-size: 16px;
     line-height: 1.6;
     color: #333;
     text-align: justify;
+    font-family: Arial, sans-serif; 
+    font-size: 18px;
 }
 
 #educacion iframe {
@@ -112,7 +153,41 @@ nav ul li a:hover {
     align-self: center;
     margin: auto;
 }
+/*Habilidades*/
+#habilidades {
+    text-align: center;
+    background-image: url('https://img.freepik.com/foto-gratis/fondo-3d-cubos-blancos_23-2150472998.jpg?t=st=1730186677~exp=1730190277~hmac=f00339dea3d9a61f8fb62e5a25c944456a49d0332d572f8befd855f6bf6796ee&w=740');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+#habilidades h2 {
+    font-size: 28px;
+    color: #261883;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px; 
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.logo-habilidades img {
+    flex: 1 1 45%; 
+    max-width: 200px; 
+    height: auto;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 /*Forumulario y mapa: Contactanos*/
 #contactanos {
