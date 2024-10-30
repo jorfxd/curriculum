@@ -22,7 +22,7 @@ header {
     color: #070700;
     text-align: center;
     margin-bottom: 20px;
-    
+    font-family: "Kanit", sans-serif;
 }
 #encabezado {
     padding: 20px;
@@ -53,7 +53,7 @@ nav ul li a {
     padding: 15px 25px; 
     border-radius: 10px; 
     font-family: "Kanit", sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     transition: background-color 0.3s ease; 
 }
 nav ul li a:hover {
@@ -68,6 +68,14 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+#resumen h2{
+    grid-area: title;
+    font-size: 28px;
+    color: #261883;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: "Kanit", sans-serif;
 }
 
 #resumen .subtitle {
@@ -101,6 +109,7 @@ nav ul li a:hover {
     color: #261883;
     text-align: left;
     margin-bottom: 100px;
+    font-family: "Kanit", sans-serif;
 }
 
 .social-links {
@@ -146,6 +155,7 @@ nav ul li a:hover {
     color: #261883;
     text-align: left;
     margin-bottom: 20px;
+    font-family: "Kanit", sans-serif;
 }
 #educacion p {
     grid-area: text;
@@ -170,12 +180,12 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
 }
-
 #habilidades h2 {
     font-size: 28px;
     color: #261883;
     text-align: center;
     margin-bottom: 40px;
+    font-family: "Kanit", sans-serif;
 }
 .logo-habilidades {
     display: flex;
@@ -209,6 +219,7 @@ nav ul li a:hover {
     color: #261883;
     text-align: center;
     margin-bottom: 40px;
+    font-family: "Kanit", sans-serif;
 }
 #proyectos .ProyectosPersonales img {
     flex: 1 1 45%; 
@@ -238,6 +249,7 @@ nav ul li a:hover {
     color: #261883;
     text-align: left;
     margin-bottom: 20px;
+    font-family: "Kanit", sans-serif;
 }
 #contactanos-content {
     display: flex;
@@ -257,7 +269,8 @@ form {
     border-radius: 8px;
 }
 .map-container {
-    min-width: 43%; 
+    min-width: 45%;
+    max-width: 50%;
 }
 form label {
     font-weight: bold;
